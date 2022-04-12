@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaun Banega Crorepati</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div><img src="kbc.png" /></div>
+
+    <div class="row firstPage">
+      <div class="start">
+        <h1>Kaun Banega Crorepati</h1>
+        <div class="InstructionDiv">
+          <p id="InstructionsHead" style="font-size: 150%">
+            <u><strong>Instructions</strong></u>
+          </p>
+          <p id="instr">1. There are a total of 10 questions.</p>
+          <p id="instr">
+            2. Each Question has four options and only one option is correct.
+          </p>
+          <p id="instr">
+            3. Select answer and click on 'Submit' to go to next question.
+          </p>
+          <p id="instr">4. You cannot go back to previous question.</p>
+          <p id="instr">5. For each correct answer you get 1 point.</p>
+          <p id="instr">6. There is No Negative points for wrong answer.</p>
+          <p id="instr">
+            7. Your Score and correct answers will be displayed at end.
+          </p>
+          <p id="instr">
+            8. All the given questions were prized 1 crore and above on KBC.
+          </p>
+          <p id="instr">
+            9. Lets see if you have what it takes to be a crorepati !.
+          </p>
+        </div>
+        <button class="startBtn hover">Start</button>
+      </div>
+    </div>
+    <div class="row hidden" id="questionBox">
+      <div class="positionLeft" style="margin-top: 40px">
+        <span class="count" style="float: left">Question: 1/10</span>
+      </div>
+      <section id="questionBox">
+        <p class="question">
+          Which of these explosives was first patented in 1898 by German chemist
+          Georg Friedrich Henning and first used in World War II?
+        </p>
+        <br />
+        <button class="button0 answers hover" value="0">HMX</button><br />
+        <button class="button1 answers hover" value="1">RDX</button><br />
+        <button class="button2 answers hover" value="2">TNT</button><br />
+        <button class="button3 answers hover" value="3">PETN</button>
+      </section>
+    </div>
+    <div class="row hidden" id="score1">
+      <div class="box-continue">
+        <button class="continue js-continue hidden">Submit</button>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
